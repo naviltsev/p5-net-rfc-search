@@ -35,7 +35,7 @@ Net::RFC::Search is a module aimed to be a simple tool to search and dump RFC's.
 
 - new(%options)
 
-    Create instance of C<Net::RFC::Search>.
+    Create instance of Net::RFC::Search.
 
     **%options** are optional parameters:
 
