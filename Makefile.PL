@@ -22,7 +22,7 @@ WriteMakefile(
         'IO::File'                  => 0,
         'File::Tempdir'             => 0,
         'Carp'                      => 0,
-        'Cwd'                       => 0,
+        'File::HomeDir'                       => 0,
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'Net-RFC-Search-*' },

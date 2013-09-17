@@ -102,7 +102,7 @@ use strict;
 use LWP::UserAgent;
 use IO::File;
 use Carp;
-use Cwd 'abs_path';
+use File::HomeDir;
 
 our $VERSION = '0.01';
 our $ua;
@@ -111,7 +111,7 @@ sub new {
     my ($class, %params) = @_;
 
     my $self = {};
-    $self->{indexpath} = $params{indexpath} || abs_path("~") . ".rfcindex";
+    $self->{indexpath} = $params{indexpath} || File::HomeDir->my_home . "/.rfcindex";
 
     $self->{rfcbaseurl} = $params{rfcbaseurl} || 'http://www.ietf.org/rfc/';
     $self->{rfcbaseurl} =~ s/\s//g;
