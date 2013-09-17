@@ -63,6 +63,20 @@ Net::RFC::Search is a module aimed to be a simple tool to search and dump RFC's.
 
 - do not rely on LWP::UserAgent only, add lynx/curl as optional methods to retrieve RFC's
 
-# THANKS
+# ACKNOWLEDGEMENTS
 
 This module is heavily based on rfc.pl script written by **Derrick Daugherty** (http://www.dewn.com/rfc/)
+
+# AUTHOR
+
+Nikolay Aviltsev, `navi@cpan.org`
+
+# LICENSE AND COPYRIGHT
+
+Copyright 2012 Nikolay Aviltsev.
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of either: the GNU General Public License as published by the Free
+Software Foundation; or the Artistic License.
+
+See <http://dev.perl.org/licenses/> for more information.

@@ -76,9 +76,23 @@ By providing optional C<$filename> content will be dumped into C<$filename>.
 
 =back
 
-=head1 THANKS
+=head1 ACKNOWLEDGEMENTS
 
 This module is heavily based on rfc.pl script written by **Derrick Daugherty** (http://www.dewn.com/rfc/)
+
+=head1 AUTHOR
+
+Nikolay Aviltsev, C<< navi@cpan.org >>
+
+=head1 LICENSE AND COPYRIGHT
+
+Copyright 2012 Nikolay Aviltsev.
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of either: the GNU General Public License as published
+by the Free Software Foundation; or the Artistic License.
+
+See L<http://dev.perl.org/licenses/> for more information.
 
 =cut
 
@@ -190,13 +204,6 @@ sub _download_rfc_by_index {
     return $response->is_success ?
         { error => 0, content => $response->decoded_content } :
         { error => 1, error_code => $response->code, error_message => $response->status_line };
-}
-
-sub _test {
-    # this is a test method
-    my $self = shift;
-    my $params = $self->{cgi}->params;
-    
 }
 
 1;
