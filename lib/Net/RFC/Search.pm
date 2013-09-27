@@ -26,7 +26,7 @@ B<get_by_index($index_number)> is for dumping RFC's content either to a variable
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =head1 DESCRIPTION
 
@@ -86,7 +86,7 @@ Nikolay Aviltsev, C<< navi@cpan.org >>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2012 Nikolay Aviltsev.
+Copyright 2013 Nikolay Aviltsev.
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of either: the GNU General Public License as published
@@ -104,8 +104,8 @@ use IO::File;
 use Carp;
 use File::HomeDir;
 
-our $VERSION = '0.01';
-our $ua;
+our $VERSION = '0.02';
+my $ua;
 
 sub new {
     my ($class, %params) = @_;

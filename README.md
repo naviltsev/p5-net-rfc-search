@@ -21,11 +21,11 @@ Net::RFC::Search provides 2 methods:
     my $rfc_text = $rfc->get_by_index(6455);
 
     # Dumps RFC 6455 into /tmp/6455.txt file
-    $rfc->get_by_index(6455, '/tmp/6455.txt'); 
+    $rfc->get_by_index(6455, '/tmp/6455.txt');
 
 # VERSION
 
-Version 0.01
+Version 0.02
 
 # DESCRIPTION
 
@@ -73,7 +73,7 @@ Nikolay Aviltsev, `navi@cpan.org`
 
 # LICENSE AND COPYRIGHT
 
-Copyright 2012 Nikolay Aviltsev.
+Copyright 2013 Nikolay Aviltsev.
 
 This program is free software; you can redistribute it and/or modify it under
 the terms of either: the GNU General Public License as published by the Free
